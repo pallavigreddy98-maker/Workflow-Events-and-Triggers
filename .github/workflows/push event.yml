@@ -1,0 +1,14 @@
+name: Push Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Code pushed to main branch"
