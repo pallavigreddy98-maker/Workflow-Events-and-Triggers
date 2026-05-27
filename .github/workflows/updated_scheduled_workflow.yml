@@ -1,0 +1,14 @@
+name: Nightly Backup
+
+on:
+  workflow_dispatch: 
+  
+  schedule:
+    - cron: '*/2 * * * *'
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Running midnight backup"
